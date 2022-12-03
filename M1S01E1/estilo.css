@@ -1,0 +1,121 @@
+html,
+body,
+div,
+main,
+footer {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: rgb(240, 250, 146);
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    padding: 0 20px 40px;
+}
+
+h1 {
+    font-family: Verdana;
+    font-size: 20px;
+    color: brown;
+    text-align: center;
+    background-image: url("Images/fundotitulo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+p {
+    font-size: 14px;
+}
+
+h2 {
+    margin-bottom: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: brown;
+    font-size: 20px;
+    
+}
+
+a#botao button {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+a#botao img {
+    height: 40px;
+}
+
+div#grupoimagens {
+    width: 100%;
+    display: flex;
+}
+
+div#grupoimagens img {
+    width: calc(100% / 3);
+    display: block;
+}
+
+iframe {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    height: 40px;
+    padding: 0 px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: coral;
+}
+
+nav img#filtro {
+    display: block;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li a {
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: bisque;
+    transition: all 300ms;
+    font-style: italic;
+}
+
+nav ul li a:hover {
+    background-color: bisque;
+    color: brown;
+}
+
+footer {
+    background-color: coral;
+    color: bisque;
+    text-align: center;
+    font-style: italic;
+}
